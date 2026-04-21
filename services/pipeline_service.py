@@ -13,7 +13,7 @@ import httpx
 from anthropic import Anthropic
 from datetime import datetime, timezone
 
-from .supabase_client import get_supabase
+from services.supabase_client import get_supabase
 
 # ── Anthropic client ──────────────────────────────────────────────────────────
 

@@ -1,8 +1,8 @@
 from fastapi import APIRouter, HTTPException, Request, UploadFile, File, Form
 from typing import Optional
-from ..models import ProjectCreate, ProjectResponse
-from ..services.supabase_client import get_supabase
-from ..services.pipeline_service import _storage_path, _mime_for, BUCKET
+from models import ProjectCreate, ProjectResponse
+from services.supabase_client import get_supabase
+from services.pipeline_service import _storage_path, _mime_for, BUCKET
 
 router = APIRouter(prefix="/projects", tags=["projects"])
 

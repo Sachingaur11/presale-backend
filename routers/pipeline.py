@@ -3,9 +3,9 @@ from fastapi import APIRouter, HTTPException, Request, BackgroundTasks
 from fastapi.responses import StreamingResponse
 import json
 
-from ..models import RunPipelineRequest
-from ..services.supabase_client import get_supabase
-from ..services import pipeline_service
+from models import RunPipelineRequest
+from services.supabase_client import get_supabase
+from services import pipeline_service
 
 router = APIRouter(prefix="/projects", tags=["pipeline"])
 

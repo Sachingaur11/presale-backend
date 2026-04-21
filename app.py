@@ -5,8 +5,8 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-from .routers import projects, pipeline, feedback, approvals, files, admin
-from .services.supabase_client import get_supabase
+from routers import projects, pipeline, feedback, approvals, files, admin
+from services.supabase_client import get_supabase
 
 app = FastAPI(title="Presale Agent Dashboard API", version="1.0.0")
 
